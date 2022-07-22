@@ -10,7 +10,7 @@
   margin-right: 30px;
 }
 h1 {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Roboto", sans-serif;
 }
 header {
@@ -21,9 +21,9 @@ header {
   color: #e8590c;
   /* margin-bottom: 150px; */
   padding: 24px;
-  padding-bottom: 50px;
-
+  /* padding-bottom: 50px; */
   width: 100%;
+  position: relative;
 }
 
 .main-header {
@@ -33,6 +33,11 @@ header {
   gap: 30px;
   align-self: center;
   padding: 10px 30px;
+}
+.logo-theme {
+  position: absolute;
+  top: 20px;
+  left: 43%;
 }
 /* 
 .metier {
@@ -55,7 +60,7 @@ nav a {
   padding: 50px;
   /* margin-bottom: 100px; */
   /* border-radius: 3%; */
-  margin: 75px auto;
+  margin-bottom: 50px;
   position: relative;
 }
 .description-block {
@@ -81,7 +86,7 @@ nav a {
   font-size: 58px;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
-  color: #161672;
+  color: #371464;
 }
 /* First section*/
 .profile-picture {
@@ -105,7 +110,7 @@ nav a {
 }
 h2 {
   margin-bottom: 30px;
-  color: #161672;
+  color: #371464;
   position: absolute;
   right: 150px;
   top: 20px;
@@ -152,7 +157,7 @@ h2 {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
   column-gap: 10px;
-  row-gap: 50px;
+  row-gap: 20px;
 }
 .gallery-image {
   width: 100%;
@@ -182,13 +187,13 @@ h2 {
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 4;
-  grid-row-end: 8;
+  grid-row-end: 9;
 }
 .gallery__item--7 {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 5;
-  grid-row-end: 8;
+  grid-row-end: 9;
 }
 
 /* .gallery__item--2 {
