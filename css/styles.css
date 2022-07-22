@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0 auto;
+}
 /* HEADER */
 .logo {
   width: 100px;
@@ -13,19 +16,33 @@ h1 {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #ffe8cc;
   color: #e8590c;
   /* margin-bottom: 150px; */
   padding: 24px;
   /* padding-bottom: 50px; */
-  width: 100%;
+  width: 1400px;
+  height: 350px;
   position: relative;
+  clip-path: border-box polygon(0 0, 100% 0, 43% 100%, 0 40%);
 }
+/* .remplir {
+  height: 200px;
+  background-color: black;
+}*/
 
+.barre {
+  height: 700px;
+  border-left: solid 10px #ffe8cc;
+  position: absolute;
+  left: 598px;
+  top: 0;
+}
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -33,69 +50,106 @@ header {
   gap: 30px;
   align-self: center;
   padding: 10px 30px;
+  transform: rotate(20deg);
 }
 .logo-theme {
+  font-size: 32px;
   position: absolute;
   top: 20px;
-  left: 43%;
+  left: 35%;
 }
 /* 
 .metier {
   align-self: flex-start;
 } */
 nav {
-  margin-right: 20px;
+  margin-right: 250px;
+  /* font-size: 32px; */
+  transform: translate(-100px, 0);
+  transform: rotate(-23deg);
 }
 nav a {
   margin-right: 30px;
   text-decoration: none;
   display: inline-block;
   color: #e8590c;
-  font-size: 18px;
+  font-size: 24px;
 }
 /* TEST*/
 .first-section {
-  background-color: #ffe8cc;
+  background-color: #fff;
   color: #f76707;
   padding: 50px;
+  padding-top: 0;
   /* margin-bottom: 100px; */
   /* border-radius: 3%; */
   margin-bottom: 50px;
   position: relative;
+  /* clip-path: polygon(98% 100%, 45% 0, 39% 21%, 32% 0, 2% 100%); */
 }
 .description-block {
   width: 800px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-left: 640px;
   font-family: "Roboto", sans-serif;
+  /* transform: rotate(-23deg); */
+  position: relative;
+}
+.text-img {
+  width: 700px;
+  position: absolute;
+  right: 50px;
+  top: -90px;
 }
 .text-1 {
   font-size: 24px;
   margin-bottom: 20px;
+  /* transform: rotate(-15deg); */
+  margin-bottom: 35px;
+  position: absolute;
+  left: -50px;
+  top: -20px;
 }
 .text-2 {
   position: static;
+  font-size: 24px;
+  /* transform: rotate(-10deg); */
+  margin-bottom: 25px;
+  position: absolute;
+  left: 0;
+  top: 50px;
 }
 .text-3 {
   font-size: 24px;
+  /* transform: rotate(-5deg); */
+  margin-bottom: 45px;
 }
 .text-4 {
   font-size: 18px;
   color: #f76707;
+  /* transform: rotate(5deg); */
+  margin-bottom: 35px;
 }
+
 .text-maxime {
-  font-size: 58px;
+  /* font-size: 48px; */
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   color: #371464;
+  /* transform: rotate(8deg); */
 }
 /* First section*/
 .profile-picture {
-  width: 350px;
-  height: 500px;
+  width: 500px;
+  /* height: 500px; */
   margin-left: 40px;
   margin-bottom: 25px;
-  transform: scale(1.2);
-  border-radius: 10%;
+  /* transform: rotate(12deg); */
+  position: absolute;
+  top: -75px;
+  left: 15px;
+
+  /* border-radius: 10%; */
   margin: 20px 20px;
 }
 .presentation {
@@ -106,16 +160,19 @@ nav a {
 .description-block {
   font-size: 35px;
   line-height: 2;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 h2 {
   margin-bottom: 30px;
   color: #371464;
   position: absolute;
-  right: 150px;
-  top: 20px;
+  left: 45%;
+  top: 70px;
 }
-
+.diversion {
+  height: 450px;
+  background-color: #fff;
+}
 /* First-section*/
 .btn--number,
 .btn--mail {
