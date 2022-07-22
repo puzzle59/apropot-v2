@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300&family=Roboto:wght@300;500;700;900&family=Sacramento&display=swap" rel="stylesheet"> 
+
     <title>Bienvenue Apropot</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="images/logo-img.webp" />
+      <!-- <img class="logo" src="images/logo-img.webp" /> -->
       <div class="main-header">
         <h1>Marie Odile Ringot</h1>
-        <h1 class="metier">Peintre qualifiée</h1>
+        <h1 >Peintre qualifiée</h1>
       </div>
       <nav>
         <a href="">Acceuil</a>
-        <a href="">Réalisations</a>
-        <a href="">Contact</a>
-        <a href=""> Blabla</a>
-        <a href=""> Blabla</a>
+        <a href="#section-basics">Réalisations</a>
+        <a href="#section-form">Contact</a>
+        <!-- <a href=""> Blabla</a>
+        <a href=""> Blabla</a> -->
       </nav>
     </header>
     <!-- <h1>notes</h1> -->
@@ -29,31 +33,112 @@
       info claire et rapide
     </p> -->
     <section class="first-section">
+      <h2>Depuis 2011</h2>
       <div class="presentation">
         <img
-          class="profile-picture"
-          src="images/profile-picture-mor.jpg"
-          alt="photo d'un peintre"
+        class="profile-picture"
+        src="images/profile-picture-mor.jpg"
+        alt="photo d'un peintre"
         />
         <div class="description-block">
-          <h2>Votre artisan peintre sur Annonay et alentours</h2>
           <p class="description-text">
-            Après un parcours professionnel dans la finance, j'ai ressenti le
+            <!-- Après un parcours professionnel dans la finance, j'ai ressenti le
             besoin de me réaliser en rénovant l'habitat. Très attentive au
-            besoin du client , dans le détail.
+            besoin du client , dans le détail. -->
           </p>
-          <button class="btn--number">06 43 61 10 57</button>
-          <button class="btn--mail">apropot@orange.fr</button>
+          <p class="text-1">   Application de peintures à effet de matière : chaux etc</p> 
+          <h2 class="text-2">Demandez un devis <em>détaillé</em>...</h2>
+          <p class="text-3">  Calculé selon la surface totale à peindre </p>
+            <p class="text-4">(murs , sols et plafonds)</p> 
+          
+          <p class="text-maxime">Bénéficiez  d'un accompagnement de A à Z</p>
         </div>
       </div>
-      <div class="skill-test">
-        <ul class="basics">
-          <li>Enduis</li>
-          <li>Peintures</li>
-          <li>Conseil</li>
-          <li>Pose de parquet</li>
-        </ul>
+    </div>
+  </section>
+  <div id="section-basics" class="skill-test">
+    <ul class="basics">
+      <li>Enduis</li>
+      <li>Peintures</li>
+      <li>Conseil</li>
+      <li>Pose de parquet</li>
+    </ul>
+  </div>
+  <div class="buttons">
+    <button class="btn--number">06 43 61 10 57</button>
+    <button class="btn--mail">apropot@orange.fr</button>
+  </div>
+  <div class="gallery">
+    <!-- <figure class=”first-gallery">
+      <img class="gallery-image img-1" src="images/fausse-pierre.jpg" alt="fausse-pierre">
+    </figure> -->
+    <figure class="gallery__item gallery__item--2">
+      <!-- <img class="gallery-image img-2" src="images/cuisine-1.jpg" alt="cuisine"> -->
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img class="gallery-image img-3" src="images/peinture-salon.jpg" alt="">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <img class="gallery-image img-4" src="images/poutres.jpg" alt="">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+
+      <img class="gallery-image img-5" src="images/parquet-décapé.jpg" alt="">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+      <img class="gallery-image img-6" src="images/peinture-fenêtre.jpg" alt="">
+    </figure>
+    <figure class="gallery__item gallery__item--7">
+    <img src="images/fausse-pierre.jpg" class="gallery-image" alt="">
+    </figure>
+  
+    
+
+
+  </div>
+  <div id="section-form" class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
       </div>
-    </section>
-  </body>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
+</body>
 </html>
