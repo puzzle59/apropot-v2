@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300&family=Roboto:wght@300;500;700;900&family=Sacramento&display=swap" rel="stylesheet"> 
@@ -12,146 +13,99 @@
     <title>Bienvenue Apropot</title>
   </head>
   <body>
-    
-    <div class="triangle-shape">
-    <div class="test">
-
-      <header>
-        <!-- <img class="logo" src="images/logo-img.webp" /> -->
+    <header class="header">
+      <!-- <img class="logo" src="images/logo-img.webp" /> -->
       <div class="main-header">
         <h1>Marie Odile Ringot</h1>
         <h1 >Peintre qualifiée</h1>
+        <h1 class="title-name">APROPOT'PEINTURE</h1>
       </div>
-      <h2 class="logo-theme">APROPOT'PEINTURE</h2>
-      <h2>Depuis 2011</h2>
       <nav>
-        <a href="">Acceuil</a>
+        <a href="#accueil">Acceuil</a>
         <a href="#gallery">Réalisations</a>
-        <a href="#section-form">Contact</a>
+        <!-- <a href="#section-form">Contact</a> -->
         <!-- <a href=""> Blabla</a>
-          <a href=""> Blabla</a> -->
-        </nav>
-      </header>
-      <!-- <h1>notes</h1> -->
-      <!-- <p class="notes">
-        apropot ou MOR couleurs du site ? fausse pierre beton ciré <br />
-        porte/gallery <br />
-        info claire et rapide
-      </p> -->
-    </div> 
-      <div class="remplir">
-        
-      </div>
-    </div>
-    <section class="first-section">
-      
-      <div class="presentation">
+        <a href=""> Blabla</a> -->
+      </nav>
+    </header>
+    <!-- <h1>notes</h1> -->
+    <!-- <p class="notes">
+      apropot ou MOR couleurs du site ? fausse pierre beton ciré <br />
+      porte/gallery <br />
+      info claire et rapide
+    </p> -->
+    <section id=accueil class="first-section">
+      <div class="container">
+
+        <h2>Depuis 2011</h2>
+        <div class="presentation">
         <img
         class="profile-picture"
-        src="images/MarieOdile-perspective-transparent2.png"
+        src="images/profile-picture-mor.jpg"
         alt="photo d'un peintre"
         />
-        <div class="barre"></div>
-        <!-- <div class="description-block">
+        <div class="description-block">
+          <p class="text-maxime">Bénéficiez  d'un accompagnement de A à Z</p>
           <p class="description-text">
             <!-- Après un parcours professionnel dans la finance, j'ai ressenti le
               besoin de me réaliser en rénovant l'habitat. Très attentive au
               besoin du client , dans le détail. -->
-            </p>
-            <!-- <p class="text-1">   Application de peintures à effet de matière : chaux etc</p> 
-          <h2 class="text-2">Demandez un devis <em>détaillé</em>...</h2>
-          <p class="text-3">  Calculé selon la surface totale à peindre </p>
-          <p class="text-4">(murs , sols et plafonds)</p> 
-          <p class="text-maxime">Bénéficiez  d'un accompagnement de A à Z</p>
-        </div> --> -->
-        <img class="text-img" src="images/txt-perspective.png" alt="">
+          </p>
+          <p class="text-1">   J'applique des peintures à effet de matière : chaux ,béton ciré ; fausse pierre
+          </p> 
+           <p>J'ai une grande préférence pour les produits bio</p>
+           <p>Je me déplace à la demande</p>
+           <!-- <h2 class="text-2">Qu'est-ce qu'on met à la place ? .</h2> -->
+           <!-- <p class="text-3">  Calculé selon la surface totale à peindre </p> -->
+           <!-- <p class="text-4">(murs , sols et plafonds)</p>  -->
+           
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="diversion"></div>
-</div>
   <div id="section-basics" class="skill-test">
     <ul class="basics">
       <li>Enduis</li>
       <li>Peintures</li>
       <li>Conseil</li>
-      <li>Pose de parquet</li>
+    
     </ul>
   </div>
   <div class="buttons">
-    <button class="btn--number">06 43 61 10 57</button>
+    <!-- <button class="btn--number">06 43 61 10 57</button> -->
     <button class="btn--mail">apropot@orange.fr</button>
   </div>
-  <div id='gallery' class="gallery">
+  <div id="gallery" class="gallery">
     <!-- <figure class=”first-gallery">
       <img class="gallery-image img-1" src="images/fausse-pierre.jpg" alt="fausse-pierre">
     </figure> -->
     <figure class="gallery__item gallery__item--2">
-      <!-- <img class="gallery-image img-2" src="images/cuisine-1.jpg" alt="cuisine"> -->
+      <img class="gallery-image img-2" src="images/fausse-pierre-2.jpg" alt="cuisine">
     </figure>
     <figure class="gallery__item gallery__item--3">
-      <img class="gallery-image img-3" src="images/peinture-salon.jpg" alt="">
+      <img class="gallery-image img-3" src="images/toile-huile.jpg" alt="">
     </figure>
     <figure class="gallery__item gallery__item--4">
-      <img class="gallery-image img-4" src="images/poutres.jpg" alt="">
+      <img class="gallery-image img-4" src="images/profil-chaux.jpg" alt="">
     </figure>
     <figure class="gallery__item gallery__item--5">
 
-      <img class="gallery-image img-5" src="images/parquet-décapé.jpg" alt="">
+      <img class="gallery-image img-5" src="images/trompe-loeil-2.jpg" alt="">
     </figure>
     <figure class="gallery__item gallery__item--6">
-      <img class="gallery-image img-6" src="images/peinture-fenêtre.jpg" alt="">
+      <img class="gallery-image img-6" src="images/peinture-salon-2.jpg" alt="">
     </figure>
     <figure class="gallery__item gallery__item--7">
     <img src="images/fausse-pierre.jpg" class="gallery-image" alt="">
     </figure>
+    <figure class="gallery__item gallery__item--8">
+      <img src="images/trompe-loeil-3.jpg" class="gallery-image" alt="">
+      </figure>
   
     
 
 
-  </div>
-  <div id="section-form" class="container">
-    <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-    </form>
   </div>
 </body>
 </html>

@@ -1,0 +1,4 @@
+Problème avec cette propriété fixed .. ça ne s'affiche pas comme il faut .. 
+
+Je voudrais que la bordure de la gallerie épouse parfaitement les élèments
+en fait je voudrais pas de row gap après la dernière row
